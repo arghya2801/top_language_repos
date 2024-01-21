@@ -1,7 +1,6 @@
 import requests
 import plotly.express as px
 
-# API calls
 url = "https://api.github.com/search/repositories"
 url += "?q=language:flutter+sort:stars+stars:>10000"
 
@@ -27,7 +26,6 @@ for repo_dict in repo_dicts:
     hover_text = f"{owner}<br />{description}"
     hover_texts.append(hover_text)
 
-# Graph
 title = "Most-starred Python Projects on Github"
 labels = {'x':'Repository', 'y':'Stars'}
 fig = px.bar(x=repo_links, y=stars, title=title, labels=labels,
