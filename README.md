@@ -7,3 +7,7 @@ To check for a different language, edit the code to change the language to your 
 # Roadmap
 - [ ] Language selection tool
 - [ ] GUI to launch the chart
+
+# Dependencies
+- `Python 3.x` or above
+- `Ploty` python library
